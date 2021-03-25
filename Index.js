@@ -68,3 +68,26 @@ function compressStringOfChars(){
 
     displayResult(compressedString);
 }
+
+function palindromeCheck(){
+    let userInput = prompt("Enter a word to check if it is a Palindrome");
+    let isPalindrome;
+
+    for (let i = 0, j = userInput.length - 1; i <= j ; i++, j--) {
+        if (userInput[i] == userInput[j]) {
+            isPalindrome = true;
+
+        }else{
+            isPalindrome = false;
+            break;
+        }
+    }
+    
+    if (isPalindrome) {
+        displayResult(`${userInput} is a Palindrome!`)
+        
+    } else {
+        displayResult(`${userInput} is not a Palindrome...`)
+
+    }
+}
