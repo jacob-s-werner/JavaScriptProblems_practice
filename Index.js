@@ -15,7 +15,7 @@ function reverseString(){
 }
 
 function capitalizeLetters(){
-    let userInput = prompt("Enter a sentence/word you would like to reverse");
+    let userInput = prompt("Enter a sentence to capitalize the first letter of each word");
     let capitalizedSentence = "";
     let spaceCharPassed = true
     let firstLetter = true
@@ -30,7 +30,7 @@ function capitalizeLetters(){
         } else if (spaceCharPassed == true && firstLetter == true ) {
             firstLetter = false;
             capitalizedSentence += userInput[index].toUpperCase();
-            
+
         } else  {
             firstLetter = false;
             capitalizedSentence += userInput[index];
